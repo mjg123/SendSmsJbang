@@ -12,5 +12,7 @@ A [JBang](https://jbang.dev) script for sending SMS with Twilio.
 Like this:
 
 ```
-fortune | jbang https://github.com/mjg123/SendSmsJbang/blob/master/SendSms.java --to '<YOUR_CELL_NUMBER>' --from '<YOUR_TWILIO_NUMBER>'
+fortune | jbang https://github.com/mjg123/SendSmsJbang/blob/master/SendSms.java \
+    --to '<YOUR_CELL_NUMBER>' \
+    --from '<YOUR_TWILIO_NUMBER>'
 ```
