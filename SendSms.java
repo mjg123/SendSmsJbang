@@ -66,7 +66,7 @@ class SendSms implements Callable<Integer> {
         }
 
         try {
-            System.out.print("Sending to ..." + toPhoneNumber.substring(9) + ": ");
+            System.out.print("Sending to ..." + toPhoneNumber + ": ");
             sendSMS(toPhoneNumber, fromPhoneNumber, wholeMessage);
             printlnAnsi("@|green OK|@");
 
