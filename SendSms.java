@@ -10,7 +10,6 @@ import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Parameters;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.concurrent.Callable;
 
