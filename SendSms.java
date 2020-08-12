@@ -63,6 +63,7 @@ class SendSms implements Callable<Integer> {
 
         if (wholeMessage.isBlank()){
             printlnAnsi("@|red You need to provide a message somehow|@");
+            return 1;
         }
 
         try {
