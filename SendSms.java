@@ -56,8 +56,8 @@ class SendSms implements Callable<Integer> {
         } else {
             var scanner = new Scanner(System.in).useDelimiter("\\A");
             wholeMessage = "";
-            while (scanner.hasNext()) {
-                wholeMessage += scanner.next();
+            if (scanner.hasNext()) {
+                wholeMessage = scanner.next();
             }
         }
 
