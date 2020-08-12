@@ -34,7 +34,7 @@ class SendSms implements Callable<Integer> {
         description = "The message to send",
         arity = "0..*"
     )
-    private String[] greeting;
+    private String[] message;
 
     public static void main(String... args) {
         int exitCode = new CommandLine(new SendSms()).execute(args);
@@ -50,8 +50,8 @@ class SendSms implements Callable<Integer> {
 
         String wholeMessage;
 
-        if (greeting != null) {
-            wholeMessage = String.join(" ", greeting);
+        if (message != null) {
+            wholeMessage = String.join(" ", message);
 
         } else {
             var scanner = new Scanner(System.in).useDelimiter("\\A");
